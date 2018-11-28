@@ -1,0 +1,37 @@
+<!--index.wxml-->
+<view class="container">
+    <block wx:for="{{dataList}}" wx:for-item="dataItem">
+    <block wx:if="{{undefined!=dataItem.No}}">
+        <view class="head line">
+            <view>小票ID：{{dataItem.No}}</view>
+            <view>总计：<view>¥{{dataItem.Amt}}</view></view>
+        </view>
+        <block wx:for="{{dataItem.detail}}" wx:for-item="detailItem">
+            <view class="line">
+                <view class="content" data-billid="{{detailItem.billId}}" bindtap="viewDetailFunc">
+                    <view>{{index+1}}、{{detailItem.spName}}</view>
+                    <block wx:if="{{detailItem.showFlag}}">
+                        <image class="f_r" src="../../images/wallet_up.png"></image>
+                    </block>
+                    <block wx:else> 
+                        <image class="f_r" src="../../images/wallet_down.png"></image>
+                    </block>
+                    <view class="f_r">¥{{detailItem.saleAmt}}</view>
+                </view>
+                <view wx:if="{{detailItem.showFlag}}">
+                    <view class="detail">
+                        <view>单价</view>
+                        <view>数量/重量</view>
+                        <view>总价</view>
+                    </view>
+                    <view class="detail">
+                        <view>¥{{detailItem.salePrice}}</view>
+                        <view>x{{detailItem.saleQty}}</view>
+                        <view>¥{{detailItem.saleAmt}}</view>
+                    </view>
+                </view>
+            </view>
+        </block>
+        </block>
+    </block>
+</view>

@@ -1,0 +1,9 @@
+@import "../common/lib/weui.wxss";
+
+.page-section{
+  margin-bottom: 20rpx;
+}
+.page-body{
+  position: relative;
+  top:50rpx;
+}

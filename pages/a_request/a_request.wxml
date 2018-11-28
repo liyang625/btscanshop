@@ -1,0 +1,91 @@
+<view class="container">
+  <view wx:if="{{user}}">
+  <view class="page-body">
+    <view id="adduser">
+      <form bindsubmit="formSubmit" bindbutton="formButton" bindreset="formReset">
+              <view class="page-section">
+          <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+              <input class="weui-input" name="name" value="{{user.vipName}}"  placeholder="姓名" disabled="true"/>
+            </view>
+          </view>
+        </view>
+        <view class="page-section">
+          <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+              <input class="weui-input" type="idcard" maxlength="18" name="idcard" value="{{user.mobileTel}}"placeholder="请输入对方手机号" disabled="true"/>
+            </view>
+          </view>
+        </view>
+                <view class="page-section">
+          <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+              <input class="weui-input" type="number" maxlength="20" id="vipcode" name="vipcode" value="{{user.vipCode}}" bindinput="PhoneInputChange" placeholder="请输入对方会员卡号" disabled="true"/>
+            </view>
+          </view>
+        </view>
+
+        <view class="page-section">
+          <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+              <view class="weui-cell__hd">
+                <view class="weui-label">选择关系</view>
+              </view>
+              <view class="weui-cell__bd">
+                <picker bindchange="bindPickerChange" name="mastRel" value="{{data[index].mastRel}}" range="{{array}}">
+                  <view class="weui-input">{{data[index].mastRelName}}</view>
+                  <view hidden>
+             <input type="hiddin" name="mastRelName" value="{{data[index].mastRelName}}" disabled="ture"/>
+              </view>
+                </picker>
+              </view>
+            </view>
+          </view>
+        </view>
+             <view hidden>
+             <input type="hiddin" name="famJoinMode" value="{{user.famJoinMode}}" disabled="ture"/>
+             <input type="hiddin" name="famId" value="{{user.famId}}" disabled="ture"/>
+              <input type="hiddin" name="role" value="{{user.role}}" disabled="ture"/>
+              </view>
+          <view wx:if="{{user.famJoinMode==2}}">     
+        <view class="section btn-area">
+          <button type="primary" formType="submit"> 邀请加入</button>
+        </view>
+         </view>
+        <view wx:else> 
+        <view class="section btn-area">
+          <button type="primary" formType="submit"> 申请加入</button>
+        </view>
+         </view>
+      </form>
+    </view>
+  </view>
+  </view>
+  <view wx:else>
+  <view class="page-body">
+    <view id="adduser">
+      <form bindsubmit="formSubmit" bindbutton="formButton" bindreset="formReset">
+        <view class="page-section">
+          <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+              <input class="weui-input" type="idcard" maxlength="18" name="idcard" placeholder="请输入对方手机号" />
+            </view>
+          </view>
+        </view>
+                <view class="page-section">
+          <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+              <input class="weui-input" type="number" maxlength="20" id="vipcode" name="vipcode" bindinput="PhoneInputChange" placeholder="请输入对方会员卡号" />
+            </view>
+          </view>
+        </view>
+             <view hidden><input type="text" name="famJoinMode" value="{{famJoinMode}}" disabled="ture"/> 
+             </view>
+        <view class="section btn-area">
+          <button type="primary" formType="submit">查询</button>
+        </view>
+      </form>
+    </view>
+  </view>
+  </view>
+</view>

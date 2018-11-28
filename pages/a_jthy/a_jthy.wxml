@@ -1,0 +1,67 @@
+<!--index.wxml-->
+<view class="container" style="display:{{showMain}}">
+    <!-- 顶搜索区 -->
+    <image class="top" src="../../images/bac1.png">
+    </image>   
+    <!-- 导航区 -->
+    <view class="nav">
+          <image class="content" bindtap="bindJtqy" src="../../images/main_jtqy.png"></image>
+          <image class="content" bindtap="bindJfgz" src="../../images/main_jfgz.png"></image>
+          <image class="content" bindtap="bindCygz" src="../../images/main_cygz.png"></image>
+    </view>
+    <view wx:if="{{data==1}}">  <view class="join">
+            <view>
+            <view class="title">您不是家庭会员</view>
+            <view class="content" bindtap="setFamily"> <image class="image" src="../../images/set.png"></image>创建家庭</view>
+            <view class="content" bindtap="jionFamily"><image class="image" src="../../images/join.png"></image>加入家庭</view>
+          </view>  
+    </view>
+    </view>
+    <view wx:else>
+      <view class="list" >
+      <view wx:if="{{data.img}}">
+      <image src="{{data.img}}"></image>
+      </view>
+      <view wx:else>
+      <image src="../../images/headimg.png"></image>
+      </view>
+            <view>
+                <view class="title">户主：{{data.vipName}}</view>              
+                <view class="content">卡号：{{data.vipCode}}</view>
+                <view class="content">家庭等级：{{data.levelName}}</view>
+                <view class="content">家庭积分：{{data.upPoint}}</view>
+                <view wx:if="{{cardno==mastCardno}}">
+                 <view class="request" name="famId" value="{{famId}}" bindtap="request">邀请家庭成员</view>
+            </view>  
+             </view>  
+        </view> 
+    <view class="bar"><view class="line"/>家庭成员</view>
+    <view class="list" wx:for="{{family}}" wx:key="vipCode">
+        <view wx:if="{{item.img}}">
+            <image src="{{item.img}}"></image>
+        </view>
+        <view wx:else>
+            <image src="../../images/headimg.png"></image>
+        </view>
+        <view>
+            <view class="title">{{item.vipName}}</view>
+            <view class="content">户主关系：{{item.mastRelName}}</view>
+            <view class="content" name="memCardno">会员卡号：{{item.vipCode}}</view>
+            <view wx:if="{{cardno==item.vipCode}}">
+        <!--<view class="remove" id="famId" data-famid="{{famId}}"  data-memcardno="{{item.vipCode}}" data-memremmode="{{2}}" data-mastcardno="{{mastCardno}}" bindtap="remove"> 退出家庭</view>-->
+        </view>
+        <view wx:else>
+          <view wx:if="{{cardno==mastCardno}}">
+            <!-- <view class="remove" id="famId" data-famid="{{famId}}"  data-memcardno="{{item.vipCode}}" data-memremmode="{{1}}" bindtap="remove"> 移除该成员</view> -->
+        </view>
+        </view>
+        </view>
+    </view>
+</view>
+
+</view>
+
+<!--index.wxml-->
+<view class="container" style="display:{{showRegist}}">
+    <view class="btn" bindtap="bindRegist">注册</view>
+</view>

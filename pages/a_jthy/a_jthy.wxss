@@ -1,0 +1,186 @@
+@import "../../utils/common.wxss";
+
+.btn{
+  border: 1px solid lightsteelblue;
+  padding: 10rpx 20rpx;
+  text-align:center;
+}
+
+/*顶部搜索区域*/
+.top{
+  width: 100%;
+  height: 350rpx;
+  position: relative;
+}
+
+.top .top_ct{
+  position: absolute;
+  bottom: 0px;
+  left: 70rpx;
+  width: 610rpx;
+  height: 71rpx;
+  background-color: #f4f4f4;
+  border-radius: 10rpx 10rpx 0rpx 0rpx;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.top .top_ct .ld{
+  width:50rpx;
+  height:46rpx;
+  margin-left:48rpx;
+}
+
+.top .top_ct input{
+  height:100%;
+  width:100%;
+  line-height: 100%;
+  margin-left:17rpx;
+}
+
+/*导航区*/
+.nav{
+  height: auto;
+  padding: 35rpx 0rpx;
+  justify-content:space-around;
+  flex-direction:row;
+  display: flex;
+  flex-wrap:wrap;
+  margin-top:-5rpx;
+  -webkit-box-pack: justify;
+  background-color: white;
+}
+
+.nav .content{
+  height: 140rpx;
+  width: 210rpx;
+  order:1;
+  border-radius: 10rpx;
+  color:white;
+  justify-content:center;
+  align-items:center;
+  display: flex;
+  flex-direction:column;
+}
+
+/*家装区*/
+.bar{
+  margin-top: 10rpx;
+  background-color: white;
+  height:83rpx;
+  line-height: 83rpx;
+  display: flex;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.bar .line{
+  height:100%;
+  width: 10rpx;
+  background-color: white;
+  margin-right: 24rpx;
+}
+
+.list{
+  display: flex;
+  padding: 20rpx 30rpx;
+}
+
+.list image{
+  width: 220rpx;
+  height:220rpx;
+  border-radius:220px;
+}
+
+.list .title{
+  padding: 0rpx 30rpx;
+  width: 411rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  margin-top:10rpx;
+  overflow:hidden; 
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.list .content{
+  padding: 0rpx 30rpx;
+  line-height: 45rpx;
+  text-overflow:ellipsis;
+  overflow:hidden; 
+  display: -webkit-box;
+  color: #666666;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+.list .request{
+  margin-right: 50rpx;
+  padding: 0rpx 30rpx;
+  line-height: 45rpx;
+  text-overflow:ellipsis;
+  overflow:hidden; 
+  display: -webkit-box;
+  color: #db6d3e;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+.list .remove{
+  margin-right: 50rpx;
+  padding: 0rpx 30rpx;
+  line-height: 45rpx;
+  text-overflow:ellipsis;
+  overflow:hidden; 
+  display: -webkit-box;
+  color: #db6d3e;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+/*导航区*/
+.join{
+  height: auto;
+  padding: 35rpx 0rpx;
+  justify-content:space-around;
+  flex-direction:row;
+  flex-wrap:wrap;
+  margin-top:5rpx;
+  -webkit-box-pack: justify;
+  background-color: white;
+}
+.join .image{
+  width: 80rpx;
+  height:80rpx;
+}
+.join .title{
+padding: 0rpx 30rpx;
+  width: 411rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  margin-top:5rpx;
+  overflow:hidden; 
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.join .content{
+   padding: 0rpx 30rpx;
+  line-height: 40rpx;
+  text-overflow:ellipsis;
+  overflow:hidden; 
+  display: -webkit-box;
+  color: #666666;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+    font-size: 0.8rem;
+
+}
+.content .image{
+  width: 80rpx;
+  height:80rpx;
+  margin-right:10rpx;
+  margin-top: 5rpx; 
+}

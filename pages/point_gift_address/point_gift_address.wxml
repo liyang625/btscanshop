@@ -1,0 +1,15 @@
+<button wx:if="{{showAuthorizationBtnFlag==false}}" open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">获取用户信息</button>
+<view wx:if="{{showAuthorizationBtnFlag==true}}" class="container" >
+		<button class="addbtn">添加</button>
+
+		<view wx:for="{{dataList}}">
+			<view class="top" bindtap="choiceAddress" data-id="{{item.id}}" data-name="{{item.contact_name}}" data-phone="{{item.tel}}" data-area="{{item.area}}">
+					<view class="addr">
+							<view>收货人：{{item.contact_name}}({{item.tel}})</view>
+							<view>收货地址：{{item.area}}</view>
+					</view>
+					<image src="../../images/membercenter_info_r.png" class="rjt"></image>
+			</view>
+		</view>
+		
+</view>

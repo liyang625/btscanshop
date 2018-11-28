@@ -1,0 +1,12 @@
+<!--显示主体-->
+<view class="container" style="display:{{showMain}}">
+
+    <view class="title">客服，如果有任何问题，可以随时与我们沟通。</view>
+    <view class="content">
+        <image src="../../images/help_kf.png"></image>
+        <image src="../../images/help_kf_xq.png"></image>
+    </view>
+    
+    <view class="line"></view>
+</view>
+

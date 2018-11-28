@@ -1,0 +1,29 @@
+@import "../../utils/common.wxss";
+
+.container{
+  background-color: white;
+}
+
+.title{
+  padding: 20rpx;
+}
+
+.content{
+  display: flex;
+  padding: 20rpx;
+}
+
+.content image{
+  height:300rpx;
+  width: 300rpx;
+}
+
+.content image:nth-child(2){
+  margin-left: 60rpx;
+}
+
+.line{
+  height: 0rpx;
+  margin: 20rpx;
+  border-top: 1rpx solid #dcdcdc;
+}

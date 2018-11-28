@@ -1,0 +1,26 @@
+<!--index.wxml-->
+<view class="container">
+    <view class="head">
+        <view class="top">
+            <image src="../../images/logo.png" class="logo"></image>
+            <text class="title">兴隆大院移动支付平台</text>
+            <text class="desc">由兴隆大院提供技术支持</text>
+        </view>
+        <view class="bottom">
+            <view>{{payOrg}}</view>
+            <view>{{payOrgStore}}</view>
+        </view>
+    </view>
+
+    <view class="input">
+        <view>支付积分</view>
+        <view><input placeholder="请输入积分" type="number" bindinput="bindInputNum" auto-focus class="point"/></view>
+        <view><textarea auto-height placeholder="备注" bindinput="bindInputMemo" maxlength="100" class="memo"/></view>
+    </view>
+
+    <view class="pay on" bindtap="bindPay" bindtap="bindPay">确认支付</view>
+
+    <view class="other">
+        <text>当前使用:积分支付，</text><text bindtap="bindChangeOtherPay">选择其他方式支付</text>
+    </view>
+</view>

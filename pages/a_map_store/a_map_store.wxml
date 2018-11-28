@@ -1,0 +1,39 @@
+
+<view class="container" >  
+    <!-- 导航区 -->
+    <view class="nav">
+          <view wx:if="{{data.thumb!=null && data.thumb!='' && data.thumb!='null'}}"><image src="{{data.thumb}}" class="img"></image></view>
+          <view>
+            <block wx:if="{{data.title!=null && data.title!='' && data.title!='null'}}">
+              <view class="title">{{data.title}}</view>
+            </block>
+
+            <block wx:if="{{data.address!=null && data.address!='' && data.address!='null'}}">
+              <view class="content" bindtap="bindGo" data-latitude="{{latitude}}" data-longitude="{{longitude}}" > 
+                <image class="image" bindtap="bindGo" data-latitude="{{latitude}}" data-longitude="{{longitude}}" src="../../images/bs.png"></image>
+                <text>{{data.address}}</text>
+              </view>
+            </block>
+
+
+            <block wx:if="{{data.business!=null && data.business!='' && data.business!='null'}}">
+              <view class="content">
+                <image class="image" src="../../images/time.png"></image>
+                <text>{{data.business}}</text>
+              </view>
+            </block>
+
+
+            <block wx:if="{{data.phone!=null && data.phone!='' && data.phone!='null'}}">
+              <view class="content" bindtap="bindCall" data-phone="{{data.rphone}}">
+                <image class="image"  bindtap="bindCall"data-phone="{{data.rphone}}" src="../../images/phone.png"></image>
+                <text>{{data.phone}}</text>
+              </view>
+            </block>
+
+          </view>  
+    </view>
+    
+
+</view>
+

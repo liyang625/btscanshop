@@ -1,0 +1,5 @@
+<!--index.wxml-->
+<view class="container">
+    <canvas canvas-id="barcode" />
+    <view class="barnum">{{vipcode}}</view>
+</view>

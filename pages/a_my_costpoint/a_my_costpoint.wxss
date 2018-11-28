@@ -1,0 +1,139 @@
+@import "../../utils/common.wxss";
+
+.container{
+  background-color: #f3f0f7;
+  padding-bottom: 20rpx;
+}
+
+
+.tab{
+  display: flex;
+  justify-content:center;
+  height: 80rpx;
+  min-height:80rpx;
+  margin:20rpx;
+}
+
+.tab view{
+  border: 1rpx solid #FF5A5F;
+  padding: 0rpx 100rpx;
+  min-height:70rpx;
+  line-height: 70rpx;
+  background-color: white;
+}
+
+.tab view:nth-child(1){
+  border-top-left-radius: 10rpx;
+  border-bottom-left-radius: 10rpx;
+}
+
+.tab view:nth-child(2){
+  border-top-right-radius: 10rpx;
+  border-bottom-right-radius: 10rpx;
+}
+
+.tab .checked{
+  background-color: #FF5A5F;
+  color: white;
+}
+
+
+/**消费*/
+page{
+  height:100%;
+}
+.container{
+  height:100%;
+  display: flex;
+  flex-direction:column;
+}
+
+.top{
+  flex-grow:1;
+  display: flex;
+  flex-direction:column;
+}
+
+.top .head{
+    flex-grow:0;
+}
+
+.top .content{
+  flex-grow:1;
+  overflow-y: scroll;
+}
+
+.top scroll-view{
+  height:100%;
+}
+
+
+
+.bottom{
+  border-top:solid 1rpx #dcdcdc;
+  background-color: white;
+  flex-grow:0;
+  height:auto;
+}
+
+.head_one{
+  display: flex;
+  background-color: white;
+  border-bottom:solid 1rpx #dcdcdc;
+  min-height: 100rpx;
+  line-height: 100rpx;
+  text-align:center;
+}
+
+.head_one > view{
+  width:33.3%;
+  min-height: 100rpx;
+  line-height: 100rpx;
+}
+
+
+.head{
+  display: flex;
+  background-color: white;
+  height: auto;
+  line-height:70rpx;
+  border-bottom:solid 1rpx #dcdcdc;
+  text-align:center;
+}
+.head > view{
+  width:33.3%;
+}
+.choosetime{
+  display: flex;
+  justify-content:center;
+  margin-top: 20rpx;
+}
+
+.choosetime picker{
+  border:1rpx solid #dcdcdc;
+  width:250rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  text-align: center;
+  border-radius: 10rpx;
+}
+
+.choosetime > view{
+  width:100rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  text-align: center;
+}
+
+.bottom button{
+  width:610rpx;
+  margin-top:20rpx;
+  margin-bottom: 20rpx;
+}
+
+.norecord{
+  background-color: white;
+  text-align:center;
+  height: 80rpx;
+  line-height: 80rpx;
+}

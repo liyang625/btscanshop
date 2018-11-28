@@ -1,0 +1,39 @@
+<view class="container" >
+
+	<view class='line'>
+			<label>收货人姓名</label>
+			<input placeholder='请输入收货人姓名'></input>
+	</view>
+
+	<view class='line'>
+			<label>手机/座机号码</label>
+			<input class="in" placeholder='请输入手机号码'></input>
+	</view>
+
+	<view class='line'>
+			<label>所在地区</label>
+			<input placeholder='请选择所在地区' bindtap='bindPickerClick' disabled='false' value="{{inputAreaDesc}}"></input>
+			<image src="../../images/membercenter_info_r.png" class="rjt"></image>
+	</view>
+
+	<view class='line'>
+			<label>详细地址</label>
+			<input placeholder='请输入详细地址'></input>
+	</view>
+
+	<button class="btn">保存并使用</button>
+</view>
+
+<view class="mark" wx:if="{{choiceShow==true}}"></view>
+<view class="mark1" wx:if="{{choiceShow==true}}">
+		<view class="line1"></view>
+		<view class="desc">已选择：{{choiceAreaDesc}}</view>
+		<scroll-view class="area" scroll-y="true">
+			<view wx:for="{{dataList}}">
+				<view class="item" bindtap='bindChoice' data-index="{{index}}" data-value="{{item.value}}" data-name="{{item.text}}">{{item.text}}</view>
+			</view>
+		</scroll-view>
+		<view class="markbtn">
+				<button class="lbtn" bindtap='bindCancle'>取消</button>
+		</view>
+</view>

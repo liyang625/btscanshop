@@ -1,0 +1,124 @@
+@import "../../utils/common.wxss";
+
+page{
+  background-color: white;
+}
+.container{
+  padding-bottom: 50rpx;
+  height: auto;
+}
+
+.head{
+  height:385rpx;
+  position: relative;
+  color: white;
+}
+
+.head .top{
+  height:273rpx;
+  background-image:-webkit-linear-gradient(to top right, #5697ff, #5ebbfe); 
+  background-image:linear-gradient(to top right,#5697ff,#5ebbfe);
+}
+
+.head .bottom{
+  position: absolute;
+  bottom: 0rpx;
+  height:212rpx;
+  width:670rpx;
+  border-radius: 20rpx;
+  margin-left: 40rpx;
+  margin-right: 40rpx;
+  background-color: white;
+  box-shadow:0 0 20px #a9aaab;
+  color:black;
+  text-align: center;
+}
+
+.head .bottom view:nth-child(1){
+  padding-top: 50rpx;
+  font-size: 1.2rem;
+  white-space:nowrap; 
+  overflow:hidden; 
+  text-overflow:ellipsis;
+}
+
+.head .bottom view:nth-child(2){
+  padding-top: 30rpx;
+  font-size: 0.7rem;
+  white-space:nowrap; 
+  overflow:hidden; 
+  text-overflow:ellipsis;
+}
+
+.head .logo{
+  height:104rpx;
+  width:104rpx;
+  position: absolute;
+  top:37rpx;
+  left:84rpx;
+}
+
+.head .title{
+  position: absolute;
+  left: 218rpx;
+  font-size: 1rem;
+  top:52rpx;
+}
+
+.head .desc{
+  position: absolute;
+  left: 218rpx;
+  top:103rpx;
+  font-size: 0.7rem;
+}
+
+
+.input{
+  margin-top: 20rpx;
+  height:auto;
+  width:600rpx;
+  border-radius: 20rpx;
+  margin-left: 40rpx;
+  margin-right: 40rpx;
+  background-color: white;
+  box-shadow:0 0 20px #a9aaab;
+  color:black;
+  padding: 20rpx 20rpx 10rpx 50rpx;
+}
+
+.point{
+  border-bottom: 1rpx solid #dadada;
+  font-size: 1.2rem;
+  height: auto;
+  margin-top: 30rpx;
+}
+.memo{
+  margin: 10rpx 0rpx;
+}
+
+.pay{
+  margin-left: 70rpx;
+  margin-right: 70rpx;
+  width:610rpx;
+  text-align:center;
+  background-color: #dcdcdc;
+  margin-top: 30rpx;
+  border-radius: 10rpx;
+  padding: 20rpx 0rpx;
+  color: white;
+}
+
+.on{
+  background-color: #5ab8ff;
+}
+
+.other{
+  margin-top:30rpx;
+  width:100%;
+  text-align: center;
+  font-size: 0.7rem;
+}
+
+.other text:nth-child(2){
+  color:#47b0ff;
+}

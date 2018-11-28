@@ -1,0 +1,52 @@
+<!--显示主体-->
+<view class="container" style="display:{{showMain}}">
+
+    <view class="title">付钱，开通支付后可以很方便的为商品付款</view>
+    <view class="content">
+        <image src="../../images/help_fq.png"></image>
+        <image src="../../images/help_fq_xq.png"></image>
+    </view>
+    
+    <view class="line"></view>
+
+    <view class="title">卡钱包，您的所有线上、线下、储值卡都在这里</view>
+    <view class="content">
+        <image src="../../images/help_kqb.png"></image>
+        <image src="../../images/help_kqb_xq.png"></image>
+    </view>
+
+    <view class="line"></view>
+
+    <view class="title">会员卡，您可以在结算时方便的出示会员卡</view>
+    <view class="content">
+        <image src="../../images/help_hyk.png"></image>
+        <image src="../../images/help_hyk_xq.png"></image>
+    </view>
+
+    <view class="line"></view>
+
+    <view class="title">消费积分，您的消费记录、线上线下积分在这里</view>
+    <view class="content">
+        <image src="../../images/help_xfjf.png"></image>
+        <image src="../../images/help_xfjf_xq.png"></image>
+    </view>
+
+    <view class="line"></view>
+
+    <view class="title">家庭成员，您的家人信息在这里可以看的到</view>
+    <view class="content">
+        <image src="../../images/help_jtcy.png"></image>
+        <image src="../../images/help_jtcy_xq.png"></image>
+    </view>
+
+    <view class="line"></view>
+
+    <view class="title">我的门店、会员权益、升级规则，您可以在这里修改门店以及查看会员权益和升级规则</view>
+    <view class="content">
+        <image src="../../images/help_bz.png"></image>
+        <image src="../../images/help_bz_xq.png"></image>
+    </view>
+
+    <view class="line"></view>
+</view>
+

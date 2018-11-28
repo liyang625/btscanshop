@@ -1,0 +1,21 @@
+<button wx:if="{{showAuthorizationBtnFlag==false}}" open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">获取用户信息</button>
+<view wx:if="{{showAuthorizationBtnFlag==true}}" class="container" >
+		<swiper 
+			indicator-dots="true">
+			<block wx:for="{{goods_album}}">
+				<swiper-item>
+					<image src="{{item}}" class="goodsimg"/>
+				</swiper-item>
+			</block>
+		</swiper>
+		<view class="title">{{do_title}}</view>
+		<view class="point">积分：{{point}}</view>
+		
+		<import src="../../wxParse/wxParse.wxml"/>
+		
+		<template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+
+		<view class="doarea"></view>
+		<view class="dobtn" bindtap='submit'>立即兑换</view>
+		
+</view>

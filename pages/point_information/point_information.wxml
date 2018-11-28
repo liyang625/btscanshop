@@ -1,0 +1,77 @@
+<view class="container">
+  <view class="page-body">
+    <view id="adduser">
+      <form bindsubmit="formSubmit" bindbutton="formButton" bindreset="formReset">
+        <view class="page-section">
+          <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+              <input class="weui-input" name="name" placeholder="输入真实姓名" />
+            </view>
+          </view>
+        </view>
+        <view class="page-section">
+          <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+              <view class="weui-cell__hd">
+                <view class="weui-label">常去门店</view>
+              </view>
+              <view class="weui-cell__bd">
+
+                <!--<view wx:for="{{array}}">
+          {{index}}: {{item.message}}
+          </view>-->
+                <picker bindchange="bindPickerChange" name="comcode" value="{{data[index].comCode}}" range="{{array}}">
+                  <view class="weui-input">{{data[index].comName}}</view>
+                </picker>
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class="page-section">
+          <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+              <view class="weui-cell__hd">
+                <view class="weui-label">性别</view>
+              </view>
+              <view class="weui-cell__bd">
+                <picker bindchange="sexChange" name="sex" value="{{sexArr[sexindex].value}}" range="{{sexArr}}" range-key='name'>
+                  <view class="weui-input">{{sexArr[sexindex].name}}</view>
+                </picker>
+              </view>
+            </view>
+          </view>
+        </view>
+          <view class="page-section">
+          <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+              <view class="weui-cell__hd">
+                <view class="weui-label">出生日期</view>
+              </view>
+              <view class="weui-cell__bd">
+                  <picker mode="date" value="{{date}}" bindchange="bindDateChange">
+                    <view class="weui-input" >{{date}}</view>
+                  </picker>
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class="section btn-area">
+          <button type="primary" formType="submit">提交</button>
+        </view>
+      </form>
+
+      <!-- 黑框提示并消失 -->
+      <toast hidden="{{toast1Hidden}}" bindchange="toast1Change">
+        {{notice_str}}
+      </toast>
+
+      <!-- 确认框 及 提示框 -->
+      <view class="page__bd">
+        <modal title="确认" confirm-text="确定" cancel-text="取消" hidden="{{modalHidden}}" mask bindconfirm="confirm_one" bindcancel="cancel_one">
+          确认提交么？
+        </modal>
+      </view>
+    </view>
+  </view>
+  <template is="foot" />
+</view>

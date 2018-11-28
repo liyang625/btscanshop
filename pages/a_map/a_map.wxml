@@ -1,0 +1,26 @@
+<import src="../common/head.wxml" />
+<import src="../common/foot.wxml" />
+
+
+<view class="container">
+    <view class="page-body">
+        <view class="page-section page-section-gap">
+            <map id="map" 
+                longitude="{{centerX}}" 
+                latitude="{{centerY}}" 
+                scale="{{scale}}" 
+                controls="{{controls}}" 
+                bindcontroltap="controltap" 
+                markers="{{markers}}"
+                circles="{{circles}}" 
+                bindmarkertap="markertap" 
+                polyline="{{polyline}}" 
+                bindregionchange="regionchange" 
+                show-location style="width: 100%; height: {{view.Height}}px;"
+                wx:if="{{markers.length>0}}">
+            </map>
+        </view>
+    </view>
+
+    <template is="foot" />
+</view>

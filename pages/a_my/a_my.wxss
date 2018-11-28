@@ -1,0 +1,195 @@
+@import "../../utils/common.wxss";
+
+page{
+  height: 100%;
+}
+
+.container{
+  background-color: white;
+  height: 100%;
+}
+
+.help{
+  position: absolute;
+  right:80rpx;
+  top:20rpx;
+  height: 30rpx;
+  width: 30rpx;
+  border-radius: 30rpx;
+  text-align: center;
+  background-color: white;
+  color: #656363;
+  font-size: 0.7rem;
+}
+
+.top{
+  height: 320rpx;
+  position: relative;
+}
+
+.top contact-button{
+  position:absolute;
+  right: 20rpx;
+  top:20rpx;
+}
+
+.head{
+  height:100rpx;
+  width:100rpx;
+  border-radius: 50rpx;
+  position: absolute;
+  top:75rpx;
+  left:22rpx;
+}
+
+.name{
+  color: white;
+  position:absolute;
+  font-size: 1rem;
+  top: 100rpx;
+  left: 164rpx;
+}
+
+.point{
+  color: white;
+  height: 120rpx;
+  position:absolute;
+  top: 123rpx;
+  left: 164rpx;
+  font-size:0.6rem;
+  padding-top: 5rpx;
+  
+}
+
+.card{
+  width:130rpx;
+  height: 160rpx;
+  position:absolute;
+  right:130rpx;
+  top: 45rpx;
+}
+
+.leve_left,.leve_right{
+  position: absolute;
+  width:337.5rpx;
+  height: 87rpx;
+  line-height: 80rpx;
+  text-align: center;
+  background-color: rgba(125, 124, 113, 0.3);
+  border-top-left-radius: 10rpx;
+  border-top-right-radius: 10rpx;
+  color: #fbe9c5;
+}
+
+.leve_left text:nth-child(1),.leve_right text:nth-child(1){
+  font-size: 0.7rem;
+}
+
+.leve_left text:nth-child(2),.leve_right text:nth-child(2){
+  font-size: 0.72rem;
+  font-weight: bold;
+}
+
+.leve_left{
+  left: 25rpx;
+  bottom: 0rpx;
+}
+
+.leve_right{
+  right: 25rpx;
+  bottom: 0rpx;
+}
+
+
+.bg{
+  width:100%;
+  height:100%;
+}
+
+.content{
+  flex-direction:row;
+  display: flex;
+  flex-wrap:wrap;
+  background-color: white;
+  -webkit-box-pack: justify;
+}
+
+.content .lattice{
+  height:180rpx;
+  flex-grow:1;
+}
+
+.content .lattice image{
+  width:60rpx;
+  height:60rpx;
+  margin: auto;
+  display: block;
+  margin-top: 30rpx;
+}
+
+.content .lattice view{
+  width:180rpx;
+  margin: auto;
+  text-align:center;
+  margin-top: 26rpx;
+}
+
+
+.content .line{
+  background-color: #f0f0f0;
+  width:1rpx;
+  height:180rpx;
+}
+
+.h_line{
+  background-color: #f0f0f0;
+  width:100%;
+  height:1rpx;
+}
+
+.nav{
+  margin-top: 20rpx;
+  height:270rpx;
+  background-color: yellow;
+}
+
+
+.register{
+  margin:50rpx;
+}
+
+swiper{
+  width:100%;
+  height: 100%;
+  display: block;
+}
+
+swiper swiper-item{
+  width:100%;
+  height: 100%;
+}
+
+swiper swiper-item navigator{
+  height:100%;
+}
+
+swiper swiper-item image{
+  width:100%;
+  height:100%;
+}
+
+
+.navcontent{
+  height:100%;
+  width:100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.navcontent image{
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  height:100%;
+  margin-left: -200rpx;
+}

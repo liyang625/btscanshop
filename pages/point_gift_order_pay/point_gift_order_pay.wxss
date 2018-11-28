@@ -1,0 +1,156 @@
+@import "../../utils/common.wxss";
+
+.container{
+  background-color: white;
+	height: 100%;
+	float:left;
+}
+
+.goodsimg{
+	width: 100%;
+	height: 416rpx;
+}
+
+.title{
+	padding:20rpx;
+}
+
+.point{
+	padding:0rpx 20rpx 20rpx 20rpx;
+	color:red;
+}
+
+.doarea{
+	height: 80rpx;
+}
+
+.dobtn{
+	position:fixed;
+	bottom:0;
+	width:100%;
+	border-top:1rpx solid #cececd;
+	height:80rpx;
+	background-color:#FFFFFF;
+	color: #FFFFFF;
+	line-height: 80rpx;
+	text-align: center;
+}
+
+.dobtn .c1{
+	background-color: #FF5A5F;
+	float:right;
+	padding:0rpx 20rpx;
+}
+.dobtn .c2{
+	float:right;
+	color: black;
+	margin-right: 20rpx;
+}
+
+.location{
+	margin-left: 20rpx;
+	margin-top: 20rpx;
+	height:50rpx;
+	width:50rpx;
+	float:left;
+}
+
+
+.addr{
+	margin-left: 20rpx;
+	width:650rpx;
+	float:left;
+}
+
+.rjt{
+	margin-top: 20rpx;
+	width:30rpx;
+	height:50rpx;
+	float:left;
+}
+
+.top{
+	padding:40rpx 0rpx;
+	float: left;
+	width:100%;
+	border-top: 1rpx solid #cececd;
+}
+
+.line1{
+	width:100%;
+	float:left;
+	height:5rpx;
+}
+
+.gimg{
+	float:left;
+	height:200rpx;
+	width:200rpx;
+}
+
+.detail{
+	float:left;
+	padding:20rpx;
+	width:100%;
+	border-bottom: 1rpx solid #cececd;
+}
+
+.desc{
+	float: left;
+	margin-left: 20rpx;
+}
+
+.allpoint{
+	float: left;
+	color: #FF5A5F;
+	width:710rpx;
+	text-align: right;
+	padding:20rpx;
+}
+
+.ts1{
+	float: left;
+	margin: 20rpx 20rpx 0rpx 20rpx;
+	width: 710rpx;
+	border-bottom: 1rpx solid #cececd;
+	padding: 20rpx 0rpx;
+}
+
+.ts1 .c1{
+	float:left;
+}
+
+.ts1 .c2{
+	text-align: right;
+	width:540rpx;
+	float:left;
+}
+
+.ts1 .c3{
+	width: 10rpx;
+	height:30rpx;
+	margin-top: 9rpx;
+	float:left;
+	margin-left:20rpx;
+}
+
+.ts1 .c4{
+	float:right;
+	width:400rpx;
+	border-radius: 10rpx;
+	height:90rpx;
+	padding-left: 20rpx;
+	border:2px solid #cececd;
+}
+
+.addbtn{
+	background-color: #FF5A5F;
+	color: #FFFFFF;
+	margin: auto;
+}
+
+.pay{
+	width:100%;
+	text-align: center;
+	padding: 150rpx 0rpx;
+}

@@ -1,0 +1,51 @@
+<button wx:if="{{showAuthorizationBtnFlag==false}}" open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">获取用户信息</button>
+<view wx:if="{{showAuthorizationBtnFlag==true}}" class="container" >
+		<view class="top" bindtap='goToAddress'>
+				<image src="../../images/bs.png" class="location"></image>
+				<view class="addr">
+						<view>收货人：{{userName}}({{userPhone}})</view>
+						<view>收货地址：{{userAddress}}</view>
+				</view>
+				<image src="../../images/membercenter_info_r.png" class="rjt"></image>
+		</view>
+		
+		<image src="../../images/shop_shdz.png" class="line1"></image>
+
+
+		<view class="detail">
+				<image src='{{thumb}}' class="gimg"></image>
+				<view class="desc">
+						<view>{{goodsName}}</view>
+						<view>{{goodsParam}}</view>
+				</view>
+		</view>
+		<view class="allpoint">总积分：{{points}}</view>
+		
+		<view class="ts1">
+				<view class="c1">运送方式</view>
+				<view class="c2">配送</view>
+				
+		</view>
+		<view class="ts1">
+				<view class="c1">配送方式</view>
+				<picker bindchange="bindPickerChange"  value="{{expressIndex}}" range-key="express_name" range="{{expressList}}">
+					<view class="c2">{{expressList[expressIndex].express_name}}¥{{expressList[expressIndex].do_express_price}}</view>
+				</picker>
+				<image src="../../images/membercenter_info_r.png" class="c3"></image>
+		</view>
+		<view class="ts1">
+				<view class="c1">售后门店</view>
+				<picker bindchange="bindPickerChange1"  value="{{selectOutletNowArrIndex}}" range-key="title" range="{{selectOutletNowArrList}}">
+					<view class="c2">{{selectOutletNowArrList[expressIndex].title}}</view>
+				</picker>
+				<image src="../../images/membercenter_info_r.png" class="c3"></image>
+		</view>
+		<view class="ts1" style="display:none">
+				<view class="c1" style="margin-top:20rpx;">买家留言</view>
+				<input class="c4" placeholder="请输入买家留言" value="{{message_to_seller}}"/>
+		</view>
+		<view class="dobtn">
+				<view class="c1" bindtap='submit'>提交订单</view>
+				<view class="c2">运费：{{express_price}}元   积分:{{points}}</view>
+		</view>
+</view>

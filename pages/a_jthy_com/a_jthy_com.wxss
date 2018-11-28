@@ -1,0 +1,17 @@
+@import "../../utils/common.wxss";
+.com1{
+  width: 100%;
+  height: 90vh;
+  position: relative;
+}
+.com2{
+  width: 100%;
+  height: 90vh;
+  position: relative;
+}
+.com3{
+  display: block;
+  width: 100%;
+  height: 93vh;
+  position: relative;
+}

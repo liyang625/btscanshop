@@ -1,0 +1,12 @@
+<!--显示主体-->
+<view class="container" style="display:{{showMain}}">
+    <view wx:for="{{dataList}}">
+        <view class="update" bindtap="bindUpdate" data-index="{{item.index}}">
+            <view>{{item.title}}</view>
+            <view>{{item.date}}</view>
+            <view>></view>
+        </view>
+    </view>
+    
+</view>
+

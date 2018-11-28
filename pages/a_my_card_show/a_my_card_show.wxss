@@ -1,0 +1,66 @@
+@import "../../utils/common.wxss";
+
+page{
+background: -webkit-linear-gradient(top, #fe7a7d, #fe595d);   /*Safari5.1 Chrome 10+*/
+}
+.container{
+  padding-bottom: 50rpx;
+  height: auto;
+}
+
+
+
+.content{
+  margin:50rpx;
+  padding-top: 20rpx;
+  background-color: white;
+}
+
+.txm{
+  width: 610rpx;
+  height:auto;
+  margin: 20rpx;
+  border-radius: 10rpx;
+}
+
+.txm .barnum {
+    margin-top: 20rpx;
+    width: 100%;
+    text-align: center;
+}
+
+.txm > canvas {
+    width: 610rpx;
+    height: 200rpx;  
+}
+
+.ewm{
+  width:510rpx;
+  height:510rpx;
+  margin:auto;
+}
+
+.line{
+  height: 0rpx;
+  widows: 100%;
+  border-bottom:#c8c8c8 1px dashed;
+}
+
+.desc1{
+  padding-top: 50rpx;
+  padding-right: 20rpx;
+  padding-left: 100rpx;
+}
+
+.desc2{
+  padding-top: 20rpx;
+  padding-right: 20rpx;
+  padding-left: 100rpx;
+}
+
+.desc3{
+  padding-top: 20rpx;
+  padding-right: 20rpx;
+  padding-left: 100rpx;
+  padding-bottom: 50rpx;
+}

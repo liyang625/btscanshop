@@ -1,0 +1,96 @@
+<!--index.wxml-->
+<view class="container">
+    <view class="top">
+        <text class="{{checkedArray[0]}}" bindtap="bindOnline">线上</text>
+        <text class="{{checkedArray[1]}}" bindtap="bindLine">线下</text>
+        <text class="{{checkedArray[2]}}" bindtap="bindStoredValueCard">储值卡</text>
+    </view>
+
+    <view>
+        <view wx:for="{{data}}">
+        <view wx:if="{{undefined!=item.status}}">
+            <view class="li" bindtap="bindViewEwm" data-id="{{item.id}}">
+                <block wx:if="{{item.status=='5'}}"><!-- 未使用 -->
+                    <view class="content normal">
+                        <view class="coupon-detail">
+                            <view class="coupon-title">{{item.title}}</view>
+                        </view>
+                        <view class="coupon-type">
+                            <view class="coupon-unit">¥</view>
+                            <view class="coupon-price">{{item.do_price}}</view>
+                        </view>
+                    </view>
+                    <view class="info">
+                        <view class="time">有效期限：{{item.limit_btime}} - {{item.limit_etime}}</view>
+                        <block wx:if="{{checkedArray[1]=='checked'}}"><!-- 未使用 -->
+                            <view class="state">未使用></view>
+                        </block>
+                        <block wx:else>
+                            <view class="state">未使用</view>
+                        </block>
+                    </view>
+                </block>
+                
+                <block wx:elif="{{item.status=='4'}}"><!-- 即将过期 -->
+                    <view class="content normal">
+                        <view class="coupon-detail">
+                            <view class="coupon-title">{{item.title}}</view>
+                        </view>
+                        <view class="coupon-type">
+                            <view class="coupon-unit">¥</view>
+                            <view class="coupon-price">{{item.do_price}}</view>
+                        </view>
+                    </view>
+                    <view class="info">
+                        <view class="time">有效期限：{{item.limit_btime}} - {{item.limit_etime}}</view>
+                        <block wx:if="{{checkedArray[1]=='checked'}}"><!-- 未使用 -->
+                            <view class="state">即将过期></view>
+                        </block>
+                        <block wx:else>
+                            <view class="state">即将过期</view>
+                        </block>
+                    </view>
+                </block>
+
+                <block wx:elif="{{item.status=='1'}}"><!-- 已使用 -->
+                    <view class="content used">
+                        <view class="coupon-detail">
+                            <view class="coupon-title">{{item.title}}</view>
+                        </view>
+                        <view class="coupon-type">
+                            <view class="coupon-unit">¥</view>
+                            <view class="coupon-price">{{item.do_price}}</view>
+                        </view>
+                    </view>
+                    <view class="info">
+                        <view class="time">有效期限：{{item.limit_btime}} - {{item.limit_etime}}</view>
+                        <view class="state">已使用</view>
+                    </view>
+                </block>
+
+                <block wx:elif="{{item.status=='3'}}"><!-- 已过期 -->
+                    <view class="content expire">
+                        <view class="coupon-detail">
+                            <view class="coupon-title">{{item.title}}</view>
+                        </view>
+                        <view class="coupon-type">
+                            <view class="coupon-unit">¥</view>
+                            <view class="coupon-price">{{item.do_price}}</view>
+                        </view>
+                    </view>
+                    <view class="info">
+                        <view class="time">有效期限：{{item.limit_btime}} - {{item.limit_etime}}</view>
+                        <view class="state">已过期</view>
+                    </view>
+                </block>
+            </view>
+            </view>
+        </view>
+    </view>
+
+    <view wx:if="{{data.length==0 || (data.length==1 && data[0].status==undefined)}}">
+        <view class="foot">没有找到相关优惠券哦~</view>
+    </view>
+    
+
+</view>

@@ -1,0 +1,6 @@
+<view class="container" >
+		<view class="pay">待支付运费：{{express_price}}</view>
+		<button class="addbtn" bindtap='pay'>支付</button>
+		
+		
+</view>

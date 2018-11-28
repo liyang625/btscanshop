@@ -1,0 +1,57 @@
+<view class="container">
+  <view class="page-body">
+    <view id="adduser">
+   
+      <form bindsubmit="formSubmit" bindbutton="formButton" bindreset="formReset">
+        <view class="page-section">
+          <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+              <input class="weui-input" name="name" value="{{data.name}}"  placeholder="姓名"/>
+            </view>
+          </view>
+        </view>
+        <view class="page-section">
+          <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+              <input class="weui-input" type="idcard" maxlength="18" name="idcard" 
+              value="{{idcard}}"placeholder="身份证号" />
+            </view>
+          </view>
+        </view>
+        <view class="page-section">
+          <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+              <input class="weui-input" type="idcard" maxlength="18" name="vipcode" value="{{vipcode}}" placeholder="大院卡号"/>
+            </view>
+          </view>
+        </view>
+        <view class="page-section">
+          <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+              <input class="weui-input" type="number" maxlength="11" id="phone" name="phone" value="{{phone}}"bindinput="PhoneInputChange" placeholder="请输入手机号" />
+            </view>
+          </view>
+        </view>
+        <view class="page-section">
+          <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+              <input class="weui-input" type="number" maxlength="6" name="code" placeholder="请输入验证码" />
+              <button class="mini-btn" type="primary" size="mini" bindtap="GetCode">{{codeText}}</button>
+            </view>
+          </view>
+        </view>
+        <view class="section btn-area">
+          <button type="primary" formType="submit">提交</button>
+        </view>
+      </form>
+      <toast hidden="{{toast1Hidden}}" bindchange="toast1Change">
+        {{notice_str}}
+      </toast>
+      <view class="page__bd">
+        <modal title="确认" confirm-text="确定" cancel-text="取消" hidden="{{modalHidden}}" mask bindconfirm="confirm_one" bindcancel="cancel_one">
+          确认提交么？
+        </modal>
+      </view>
+    </view>
+  </view>
+</view>

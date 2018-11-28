@@ -1,0 +1,36 @@
+@import "../../utils/common.wxss";
+
+.container{
+  background-color: white;
+}
+
+
+.update {
+  position: relative;
+  height: 100rpx;
+  margin-left: 10rpx;
+  border-bottom: 1rpx solid #dcdcdc;
+}
+
+.update view:nth-child(1){
+  position: absolute;
+  left: 0rpx;
+  top:15rpx;
+}
+
+.update view:nth-child(2){
+  position: absolute;
+  left: 0rpx;
+  bottom:15rpx;
+  font-size: 0.65rem;
+  color: #999999;
+}
+
+.update view:nth-child(3){
+  position: absolute;
+  right: 0rpx;
+  top:0rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  margin-right: 20rpx;
+}

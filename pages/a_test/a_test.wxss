@@ -1,0 +1,5 @@
+@import "../../utils/common.wxss";
+
+.container{
+  background-color: white;
+}

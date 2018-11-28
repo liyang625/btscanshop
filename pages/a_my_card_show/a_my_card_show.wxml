@@ -1,0 +1,13 @@
+<!--index.wxml-->
+<view class="container">
+    <view class="content">
+        <view class="txm">
+            <canvas canvas-id="barcode" />
+        </view>
+        <canvas canvas-id="ewm"  class="ewm"/>
+        <view class="line"></view>
+        <view class="desc1">卡券金额：¥{{money}}</view>
+        <view class="desc2">卡券名称：{{title}}</view>
+        <view class="desc3">有效期限：{{term}}</view>
+    </view>
+</view>

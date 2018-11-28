@@ -1,0 +1,75 @@
+<!--index.wxml-->
+<view class="container">
+    <!-- tab头 -->
+    <view class="tab">
+        <block wx:if="{{checkIndex==0}}">
+           <view class="checked" bindtap="bindCost">消费</view>
+        </block>
+        <block wx:else>
+           <view bindtap="bindCost">消费</view>
+        </block>
+        
+        <block wx:if="{{checkIndex==1}}">
+            <view class="checked" bindtap="bindPoint">积分</view>
+        </block>
+        <block wx:else>
+           <view bindtap="bindPoint">积分</view>
+        </block>
+    </view>
+
+    <!-- 积分 -->
+    <block wx:if="{{checkIndex==1}}">
+        <view class="head_one">
+            <view></view>
+            <view class="bold">线上</view>
+            <view class="bold">线下</view>
+        </view>
+        <view class="head">
+            <view>目前可兑换积分</view>
+            <view>{{OnlineAmtPoint}}</view>
+            <view>{{AmtPoint}}</view>
+        </view>
+        <view class="head">
+            <view>年度升级积分</view>
+            <view>{{OnlineAmtTotalPoint}}</view>
+            <view>{{AmtTotalPoint}}</view>
+        </view>
+    </block>
+
+    <!--消费情况-->
+    <block wx:elif="{{checkIndex==0}}">
+        <view class="top">
+            <view class="head_one">
+                <view>店铺</view>
+                <view>金额</view>
+                <view>消费时间</view>
+            </view>
+            <view class="content" >
+
+                <block wx:for="{{dataList}}">
+                    <block wx:if="{{undefined!=item.comName}}">
+                      <view class="head" data-billDate="{{item.billDate}}" data-comCode="{{item.comCode}}" bindtap="viewDetailFunc">
+                          <view>{{item.comName}}</view>
+                          <view>{{item.saleAmt}}</view>
+                          <view>{{item.billDate}}</view>
+                      </view>
+                    </block>
+                </block>
+                <view class="norecord" style="display:{{showNoRecord}};">这段时间里没有消费记录哦！</view>
+            </view>
+        </view>
+        <view class="bottom">
+            <view class="choosetime">
+                <picker mode="date" value="{{startTime}}" bindchange="startTimeFunc">
+                    <view class="picker">{{startTime}}</view>
+                </picker>
+                <view>--</view>
+                <picker mode="date" value="{{endTime}}" bindchange="endTimeFunc">
+                    <view class="picker">{{endTime}}</view>
+                </picker>
+            </view>
+
+            <button type="primary" formType="submit" bindtap="queryDataFunc">查询</button>
+        </view>
+    </block>
+</view>

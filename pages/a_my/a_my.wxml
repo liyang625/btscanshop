@@ -1,0 +1,112 @@
+<!--显示主体-->
+<view class="container" style="display:{{showMain}}">
+
+
+
+    <!-- 顶部 -->
+    <view class="top">
+        <contact-button 
+            type="default-light" 
+            size="18"
+            session-from="weapp"
+        />
+        <view class="help" bindtap="bindHelp">?</view>
+        <image src="../../images/my_bg.png" class="bg"></image>
+        <image src="{{headurl}}" class="head"></image>
+        <view class="name">{{username}}</view>
+        <view class="point">
+            <view class="top_point">{{point}}</view>
+            <view class="TotalPoint">{{TotalPoint}}</view>
+        </view>
+        <image src="{{card}}" class="card" bindtap="bindDescribe"></image>
+        <view class="leve_left">
+            <text>会员级别：</text>
+            <text>{{memberleve}}</text>
+        </view>
+        <view class="leve_right" bindtap="bindPoint">
+            <text>兑换积分：</text>
+            <text>{{memberpoint}}</text>
+            <text> ></text>
+        </view>
+    </view>
+
+    <!-- 九宫格 -->
+    <view>
+    
+        <view class="content">
+            <view class="lattice" bindtap="bindScan">
+                <image src="../../images/my_sys.png"></image>
+                <view>扫一扫</view>
+            </view>
+            <view class="line"/>
+            <view class="lattice" bindtap="bindPay">
+                <image src="../../images/my_fq.png"></image>
+                <view>付钱</view>
+            </view>
+            <view class="line"/>
+            <view class="lattice" bindtap="bindCardPackage">
+                <image src="../../images/my_kqb.png"></image>
+                <view>卡券包</view>
+            </view>
+        </view>
+
+        <view class="h_line"/>
+        
+        <view class="content">
+            <view class="lattice" bindtap="bindMembercard">
+                <image src="../../images/my_hyk.png"></image>
+                <view>会员卡</view>
+            </view>
+            <view class="line"/>
+            <view class="lattice" bindtap="bindCostPoint">
+                <image src="../../images/my_xfjf.png"></image>
+                <view>消费积分</view>
+            </view>
+            <view class="line"/>
+            <view class="lattice" bindtap="bindFamilyMember">
+                <image src="../../images/my_jtcy.png"></image>
+                <view>家庭成员</view>
+            </view>
+        </view>
+
+        <view class="h_line"/>
+
+        <view class="content">
+            <view class="lattice" bindtap="bindMemberActivity">
+                <image src="../../images/my_hyhd.png"></image>
+                <view>会员活动</view>
+            </view>
+            <view class="line"/>
+            <view class="lattice" bindtap="bindPointStroe">
+                <image src="../../images/my_jfsc.png"></image>
+                <view>积分商城</view>
+            </view>
+            <view class="line"/>
+            <view class="lattice" bindtap="bindWxSport">
+                <image src="../../images/my_lqzx.png"></image>
+                <view>领券中心</view>
+            </view>
+        </view>
+    </view>
+
+    <!-- 轮播 -->
+    <view style="height:{{swiper_height}}rpx;">
+        <swiper indicator-dots="{{indicatorDots}}"  
+            autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">  
+            <block wx:for="{{imgUrls}}">  
+                <swiper-item>  
+                    <view class="navcontent">
+                        <image style="width:{{imagewidth}};margin-left:{{imageMarginleft}};" src="{{item.url}}" data-link="{{item.link}}" bindtap="bindNav"/>   
+                    </view>
+                </swiper-item>  
+            </block>  
+        </swiper>  
+    </view>
+</view>
+
+<!-- 显示注册按钮 -->
+<view class="container" style="display:{{showRegist}}">
+  <view class="register">
+    <button type="primary" bindtap="bindRegist">注册</button>
+  </view>
+</view>

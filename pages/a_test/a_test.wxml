@@ -1,0 +1,5 @@
+<!--显示主体-->
+<view class="container" style="display:{{showMain}}">
+   <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">获取</button>
+</view>
+

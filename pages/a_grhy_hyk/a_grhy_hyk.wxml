@@ -1,0 +1,18 @@
+<!--index.wxml-->
+<view class="container">
+    <view class="top">
+        <image src="{{card}}" class="card" bindtap="viewFunc"></image>
+        <view class="point">{{point}}</view>
+    </view>
+    
+    <view class="txm">
+        <canvas canvas-id="barcode" bindtap="bindfunEnlarge"/>
+        <view class="barnum">{{vipcode}}</view>
+    </view>
+
+    <view class="desc">使用大院卡时向服务员出示此条形码</view>
+
+   
+    <view class="time">{{timeStr}}</view>
+        
+</view>

@@ -1,0 +1,10 @@
+@import "../../utils/common.wxss";
+
+.container{
+  background-color: white;
+}
+
+.goodsimg{
+	width: 100%;
+	height: 416rpx;
+}

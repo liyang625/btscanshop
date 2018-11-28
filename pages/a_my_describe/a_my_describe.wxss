@@ -1,0 +1,267 @@
+@import "../../utils/common.wxss";
+
+
+.container{
+  background-color: #f3f0f7;
+  padding-bottom: 20rpx;
+}
+
+/**tab头*/
+.tab{
+  display: flex;
+  justify-content:center;
+  margin:20rpx;
+}
+
+.tab view{
+  border: 1rpx solid #FF5A5F;
+  padding: 20rpx 30rpx;
+  background-color: white;
+}
+
+.tab view:nth-child(1){
+  border-top-left-radius: 10rpx;
+  border-bottom-left-radius: 10rpx;
+}
+
+.tab view:nth-child(2){
+  border-left: 0rpx;
+  border-right: 0rpx;
+}
+
+.tab view:nth-child(3){
+  border-top-right-radius: 10rpx;
+  border-bottom-right-radius: 10rpx;
+}
+
+.tab .checked{
+  background-color: #FF5A5F;
+  color: white;
+}
+
+/**我的门店*/
+
+.container .c1{
+  flex-grow:1;
+}
+.container .c2 button{
+  width:80%;
+  margin-top: 100rpx;
+  margin-bottom:100rpx;
+}
+
+.head{
+  background-color: #f1f1f1;
+  height:20rpx;
+}
+
+.line_t{
+  border-top: 1rpx solid #dcdcdc;
+}
+
+.line_b{
+  border-bottom: 1rpx solid #dcdcdc;
+}
+
+.content{
+  display: flex;
+  background-color: white;
+  height:100rpx;
+  line-height:100rpx;
+  color: #999999;
+}
+
+.content .grow1{
+  flex-grow:1;
+  margin-left: 20rpx;
+}
+.content .v{
+  margin-right:20rpx;
+}
+
+.content image{
+  width:40rpx;
+  height:40rpx;
+  margin-top: 29rpx;
+  margin-left:20rpx;
+}
+
+.content .c_black{
+  color: black;
+}
+
+.code{
+  background-color:#e4e4e4;
+  display: block;
+}
+
+.code input,.code image{
+  display: inline-block;
+}
+
+.code input{
+  background-color:white;
+  margin-left: 20rpx;
+  border-radius: 10rpx;
+  height:60rpx;
+  width:350rpx;
+  line-height:60rpx;
+  margin-top: 20rpx;
+  padding-left: 20rpx;
+  float: left;
+}
+
+.code image{
+  height:60rpx;
+  margin-top:20rpx;
+  width:250rpx;
+  border-radius: 10rpx;
+  float: right;
+  margin-right:20rpx;
+}
+
+
+
+/**会员权益*/
+.container1{
+  background-color: white;
+  padding: 50rpx 0rpx;
+}
+
+.t_b{
+  font-weight: bold;
+}
+
+.d{
+  width:20rpx;
+  height:20rpx;
+  border-radius: 10rpx;
+  margin-top: 5rpx;
+  margin-right:20rpx;
+  display: block;
+  background-color: black;
+}
+
+.container1 > view{
+  display: flex;
+  padding: 0rpx 20rpx;
+  margin-top: 20rpx;
+}
+
+.container1 .m_t{
+  margin-top:50rpx;
+}
+
+.container1 > view image{
+  height:20rpx;
+  width:20rpx;
+}
+
+.container1 .w1{
+  width:40rpx;
+}
+
+.container1 .w2{
+  width:700rpx;
+}
+
+
+
+.t_indent{
+  text-indent:55rpx;
+}
+
+
+
+/**升级规则*/
+
+.container2{
+  background-color: white;
+  padding: 10rpx;
+  line-height: 40rpx;
+}
+
+
+.container2 .wrap{  
+    display: table-cell;  
+    vertical-align: middle;   
+    position:absolute;  
+    top: 50%;  
+    left: 0;  
+}  
+  
+.content {  
+    position: relative;  
+    top: -50%;  
+    left: 0;  
+}
+
+.container2 >view{
+  margin-top:20rpx;
+}
+
+.b_all{
+  border: 4rpx solid black;
+  text-align:center;
+}
+
+.b_r{
+  border-right: 4rpx solid black;
+  text-align: center;
+}
+.b_t{
+  border-top: 4rpx solid black;
+  text-align: center;
+}
+.b_b{
+  border-bottom: 4rpx solid black;
+  text-align: center;
+}
+.b_l{
+  border-left: 4rpx solid black;
+  text-align: center;
+}
+
+.container2 .flex{
+  display: flex;
+  text-align:center;
+}
+
+.head{
+  width:723rpx;
+  height: 40rpx;
+  text-align: center;
+  line-height: 40rpx;
+}
+
+.w_1{
+  width:60rpx;
+  text-align: center;
+}
+
+.w_2{
+  width:90rpx;
+  text-align: center;
+}
+
+.w_3{
+  width:90rpx;
+  text-align: center;
+}
+
+.w_4{
+  width:470rpx;
+  text-align:center;
+}
+
+.h_1{
+  height:80rpx;
+}
+
+.w_span_2{
+  width:570rpx;
+}
+
+.w_span_3{
+  width:658rpx;
+}

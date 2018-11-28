@@ -1,0 +1,6 @@
+<button wx:if="{{showAuthorizationBtnFlag==false}}" open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">获取用户信息</button>
+<view wx:if="{{showAuthorizationBtnFlag==true}}" class="container" style="display:{{showMain}}">
+		<view wx:for="{{dataList}}" wx:for-item="item">
+			<image class="goodsimg" src="{{item.thumb}}" bindtap="bindGoToDetail" data-id="{{item.id}}" ></image>
+		</view>
+</view>

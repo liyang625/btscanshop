@@ -1,0 +1,272 @@
+<!--index.wxml-->
+<view class="container">
+
+
+
+    <view class="tab">
+        <block wx:if="{{checkIndex==0}}">       
+            <view class="checked" bindtap="bindMystore">我的门店</view>
+        </block>
+        <block wx:else>
+            <view bindtap="bindMystore">我的门店</view>
+        </block>
+
+        <block wx:if="{{checkIndex==1}}">
+            <view class="checked" bindtap="bindMemberRights">会员权益</view>
+        </block>
+        <block wx:else>
+            <view bindtap="bindMemberRights">会员权益</view>
+        </block>
+
+        <block wx:if="{{checkIndex==2}}">
+            <view class="checked" bindtap="bindUpgradeRule">升级规则</view>
+        </block>
+        <block wx:else>
+            <view bindtap="bindUpgradeRule">升级规则</view>
+        </block>
+        
+       
+    </view>
+
+    <!-- 升级规则 -->
+    <block wx:if="{{checkIndex==2}}">
+        <!--index.wxml-->
+        <view class="container2">
+            <view>1、大院会员（家庭会员）级别共分为5个等级、分别为水晶会员、珍珠会员、黄金会员、翡翠会员、钻石会员及各自对应的家庭会员</view>
+            <view>2、会员的等级由成长值决定，成长值越高会员等级越高享受的会员权益越大</view>
+            <view>3、会员级别的升降均由系统自动处理，无需申请。</view>
+            <view>级别对照表</view>
+            
+            <view style="width:730rpx;">
+
+                <view class="b_all">家庭会员积分等级</view>
+
+                <view class="b_l b_r b_b flex h_1">
+                    <view class="b_r w_1">会员等级</view>
+                    <view class="b_r w_2">个人会员等级</view>
+                    <view style="overflow-x: hidden;">
+                        <view class="b_b" style="width:574rpx;">家庭会员等级</view>
+                        <view class="flex">
+                            <view class="b_r w_3">2-5人</view>
+                            <view class="w_4">5人以上规则</view>
+                        </view>
+                    </view>
+                </view>
+
+
+                <view class="b_l b_r b_b flex">
+                    <view>
+                        <view class="b_b flex">
+                            <view class="b_r w_1">水晶卡</view>
+                            <view class="b_r w_2">0-4999</view>
+                            <view class="b_r w_3">0-4999</view>
+                        </view>
+                        <view class="flex">
+                            <view class="b_r w_1">珍珠卡</view>
+                            <view class="b_r w_2">5000-9999</view>
+                            <view class="b_r w_3">5000-9999</view>
+                        </view>
+                    </view>
+
+                    <view class="w_4">水晶卡、珍珠卡最多只能5名家庭会员</view>
+                </view>
+
+
+                <view class="b_l b_r b_b flex">
+                    <view class="b_r w_1">黄金卡</view>
+                    <view class="b_r w_2">10000-29999</view>
+                    <view class="b_r w_3">10000-29999</view>
+                    <view class="w_4">每增一人下限增加5000分上限增加15000分 </view>
+                </view>
+
+                <view class="b_l b_r b_b flex">
+                    <view class="b_r w_1">翡翠卡</view>
+                    <view class="b_r w_2">30000-59999</view>
+                    <view class="b_r w_3">30000-59999</view>
+                    <view class="w_4">每增一人下限增加15000分上限增加30000分 </view>
+                </view>
+
+                <view class="b_l b_r b_b flex">
+                    <view class="b_r w_1">钻石卡</view>
+                    <view class="b_r w_2">60000以上</view>
+                    <view class="b_r w_3">60000以上</view>
+                    <view class="w_4">每增加一人下限增加30000分</view>
+                </view>
+
+                <view class="b_l b_r b_b flex">
+                    <view class="b_r w_1">家庭会员人数及积分说明</view>
+                    <view class="w_span_3">
+                        水晶卡、珍珠卡最多设置5名家庭会员，黄金卡、翡翠卡、钻石卡可以设置5名以上家庭会员，5人及以下积分规则与个人会员等级一致，5人以上每增加1人增加对应级别个人会员积分的50%。
+                    </view>
+                </view>
+            </view>
+        </view>
+    </block>
+
+
+    <!-- 会员权益 -->
+    <block wx:if="{{checkIndex==1}}">
+        <!--index.wxml-->
+        <view class="container1">
+            <view><text class="t_indent">尊贵的会员朋友您好：</text></view>
+
+            <view><text class="t_indent">
+        恭喜您，从今日起，与兴隆大院共同开启精彩、尊享的会员之旅！兴隆大院会员共有五个等级（水晶、珍珠、黄金、翡翠、钻石），我们将为不同等级的会员打造属于您的专享权益。</text></view>
+
+            <view class="t_b m_t">水晶会员</view>
+            <view>
+                <view class="w1"><image class="top_bg" src="../../images/d.png"></image></view>
+                <view class="w2">享受水晶会员价商品；</view></view>
+            <view>
+                <view class="w1"><image class="top_bg" src="../../images/d.png"></image></view>
+                <view class="w2">享受酒店、餐饮、生活服务等水晶级别专属折扣；</view></view>
+            <view>
+                <view class="w1"><image class="top_bg" src="../../images/d.png"></image></view>
+                <view class="w2">生日当天/9日大院会员日1.5倍积分；</view></view>
+            <view>
+                <view class="w1"><image class="top_bg" src="../../images/d.png"></image></view>
+                <view class="w2">大院会员日活动<text class="t_b">报名权</text>；</view></view>
+            <view>
+                <view class="w1"><image class="top_bg" src="../../images/d.png"></image></view>
+                <view class="w2">消费达额享停车优惠；</view></view>
+        
+
+            <view class="t_b">珍珠会员</view>
+            <view>
+                <view class="w1"><image class="top_bg" src="../../images/d.png"></image></view>
+                <view class="w2">享水晶会员全部礼遇；</view></view>
+            <view>
+                <view class="w1"><image class="top_bg" src="../../images/d.png"></image></view>
+                <view class="w2">黄金之夜活动<text class="t_b">邀约权</text>；</view></view>
+            <view>
+                <view class="w1"><image class="top_bg" src="../../images/d.png"></image></view>
+                <view class="w2">消费达额停车优惠（大于水晶）；</view></view>
+            <view>
+                <view class="w1"><image class="top_bg" src="../../images/d.png"></image></view>
+                <view class="w2">大院好商品<text class="t_b">付费体验权</text>；</view></view>
+                <view class="t_b">终身会员</view>
+            <view>
+                <view class="w1"><image class="top_bg" src="../../images/d.png"></image></view>
+                <view class="w2">永久享珍珠会员权益；</view></view>
+            <view class="t_b m_t">黄金会员</view>
+            <view>享珍珠会员全部礼遇；</view>
+            <view>
+                <view class="w1"><image class="top_bg" src="../../images/d.png"></image></view>
+                <view class="w2">尊享购物9.5折优惠；</view></view>
+            <view>
+                <view class="w1"><image class="top_bg" src="../../images/d.png"></image></view>
+                <view class="w2">享受酒店、洗浴、餐饮<text class="t_b">黄金</text>会员专属折扣；</view></view>
+            <view>
+                <view class="w1"><image class="top_bg" src="../../images/d.png"></image></view>
+                <view class="w2">全家受邀参加黄金之夜，幸运参加翡翠之夜、钻石之夜；</view></view>
+            <view>
+                <view class="w1"><image class="top_bg" src="../../images/d.png"></image></view>
+                <view class="w2">受邀体验家庭管家式服务，限时免费停车，大院好商品免费<text class="t_b">限量体验权</text>；</view></view>
+        <view>
+                <view class="w1"><image class="top_bg" src="../../images/d.png"></image></view>
+                <view class="w2"><text class="t_b">黄金</text>会员专属异业优惠；</view></view>
+        <view class="t_b">终身会员</view>
+            <view>
+                <view class="w1"><image class="top_bg" src="../../images/d.png"></image></view>
+                <view class="w2">永久享黄金会员权益；</view></view>
+                <view>
+                <view class="w1"><image class="top_bg" src="../../images/d.png"></image></view>
+                <view class="w2">同等级别，优先享受会员活动邀约；</view></view>
+            <view class="t_b m_t">翡翠会员</view>
+            <view>
+                <view class="w1"><image class="top_bg" src="../../images/d.png"></image></view>
+                <view class="w2">享黄金会员全部礼遇；</view></view>
+            <view>
+                <view class="w1"><image class="top_bg" src="../../images/d.png"></image></view>
+                <view class="w2">尊享购物9.3折优惠；</view></view>
+            <view>
+                <view class="w1"><image class="top_bg" src="../../images/d.png"></image></view>
+                <view class="w2">享受酒店、洗浴、餐饮<text class="t_b">翡翠</text>会员专属折扣；</view></view>
+            <view>
+                <view class="w1"><image class="top_bg" src="../../images/d.png"></image></view>
+                <view class="w2">全家受邀参加翡翠之夜，幸运参加钻石之夜；</view></view>
+            <view>
+                <view class="w1"><image class="top_bg" src="../../images/d.png"></image></view>
+                <view class="w2">体验家庭管家式服务，尊享VIP室，限时免费停车（大于黄金），预约VIP一对一导购；</view></view>
+                <view>
+                <view class="w1"><image class="top_bg" src="../../images/d.png"></image></view>
+                <view class="w2">大院好商品<text class="t_b">优先预订权、体验权</text>；</view></view>
+            <view>
+                <view class="w1"><image class="top_bg" src="../../images/d.png"></image></view>
+                <view class="w2"><text class="t_b">翡翠</text>会员专属异业合作</view></view>
+
+        <view class="t_b">终身会员</view>
+            <view>
+                <view class="w1"><image class="top_bg" src="../../images/d.png"></image></view>
+                <view class="w2">永久享翡翠会员权益；</view></view>
+                <view>
+                <view class="w1"><image class="top_bg" src="../../images/d.png"></image></view>
+                <view class="w2">同等级别，优先享受会员活动邀约；</view></view>
+            <view class="t_b m_t">钻石会员</view>
+            <view>
+                <view class="w1"><image class="top_bg" src="../../images/d.png"></image></view>
+                <view class="w2">享翡翠会员全部礼遇；</view></view>
+            <view>
+                <view class="w1"><image class="top_bg" src="../../images/d.png"></image></view>
+                <view class="w2">尊享购物9折优惠</view></view>
+            <view>
+                <view class="w1"><image class="top_bg" src="../../images/d.png"></image></view>
+                <view class="w2">享受酒店、洗浴、餐饮<text class="t_b">最低</text>折扣；</view></view>
+            <view>
+                <view class="w1"><image class="top_bg" src="../../images/d.png"></image></view>
+                <view class="w2">全家受邀参加钻石之夜；</view></view>
+            <view>
+                <view class="w1"><image class="top_bg" src="../../images/d.png"></image></view>
+                <view class="w2">尊享钻石VIP室，专属停车位、免费停车、免排队支付通道、一对一导购；</view></view>
+            <view>
+                <view class="w1"><image class="top_bg" src="../../images/d.png"></image></view>
+                <view class="w2">俱乐部<text class="t_b">定制活动</text>。</view></view>
+            <view>
+                <view class="w1"><image class="top_bg" src="../../images/d.png"></image></view>
+                <view class="w2"><text class="t_b">钻石级别</text>会员专属异业合作</view></view>
+                <view class="t_b">终身会员</view>
+            <view>
+                <view class="w1"><image class="top_bg" src="../../images/d.png"></image></view>
+                <view class="w2">永久享钻石会员权益；</view></view>
+                <view>
+                <view class="w1"><image class="top_bg" src="../../images/d.png"></image></view>
+                <view class="w2">同等级别，优先享受会员活动邀约；</view></view>
+        </view>
+
+    </block>
+
+    <!-- 我的门店 -->
+    <block wx:if="{{checkIndex==0}}">
+        <view class="c1">
+            <view class="line_t line_b content">
+                <image src="../../images/membercenter_set_xm.png"></image>
+                <view class="grow1">姓名</view>
+                <view class="v">{{username}}</view>
+            </view>
+            <view class="line_b content">
+                <image src="../../images/membercenter_set_sfzh.png"></image>
+                <view class="grow1">身份证号</view>
+                <view class="v">{{idcard}}</view>
+            </view>
+            <picker range="{{comname}}" value="{{index}}"  bindchange="changeGoFunc">
+                <view class="line_b content">
+                    <image src="../../images/membercenter_set_cqqy.png"></image>
+                    <view class="grow1">常去企业</view>
+                    <view class="v c_black">{{comname[index]}}</view>
+                </view>
+            </picker>
+            <view class="line_b content">
+                <image src="../../images/membercenter_set_sjhm.png"></image>
+                <view class="grow1">手机号码</view>
+                <view class="v">{{phone}}</view>
+            </view>
+            <view class="line_b content code">
+                <input type="number" maxlength="6" bindinput="inputChange" placeholder="请输入验证码"/>
+                <image src="{{code}}" bindtap="changeCode"></image>
+            </view>
+        </view>
+        <view class="c2">
+            <button  type="primary" formType="submit" bindtap="updateData">保存</button>
+        </view>
+    </block>
+</view>

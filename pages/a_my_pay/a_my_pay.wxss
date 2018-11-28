@@ -1,0 +1,61 @@
+@import "../../utils/common.wxss";
+
+page{
+  background-color: #885bda;
+}
+.container{
+  padding-bottom: 50rpx;
+  height: auto;
+}
+
+.notice{
+  margin: 50rpx;
+  padding: 20rpx;
+  border-radius: 40rpx;
+  background-color: white;
+  text-align: center;
+}
+
+.notice1{
+  text-align: center;
+  color: white;
+}
+
+.content{
+  margin:50rpx;
+  padding: 20rpx;
+  border-radius: 10rpx;
+  background-color: white;
+}
+
+.txm{
+  width: 610rpx;
+  height:auto;
+  margin-top: 10rpx;
+  border-radius: 10rpx;
+}
+
+.txm .barnum {
+    margin-top: 20rpx;
+    width: 100%;
+    text-align: center;
+}
+
+.txm > canvas {
+    width: 610rpx;
+    height: 200rpx;  
+}
+
+.ewm{
+  width:510rpx;
+  height:510rpx;
+  margin:auto;
+}
+
+.refuse{
+  margin: 50rpx;
+  padding: 20rpx;
+  border-radius: 10rpx;
+  background-color: white;
+  text-align: center;
+}

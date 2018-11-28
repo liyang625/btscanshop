@@ -1,0 +1,10 @@
+<!--index.wxml-->
+    <view wx:if="{{com==1}}" > 
+        <image class="com1" src="../../images/a_jthy_pic.jpg"></image> 
+    </view>
+    <view wx:elif="{{com==2}}"> 
+        <image class="com2" src="../../images/a_jthy_excel.png"></image> 
+    </view>
+    <view wx:elif="{{com==3}}="> 
+        <image class="com3" src="../../images/a_jthy_excel2.png"></image> 
+    </view>

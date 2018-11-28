@@ -1,0 +1,79 @@
+{
+  "pages": [
+		
+		"pages/point_my/point_my",
+		"pages/point_gift_order_pay/point_gift_order_pay",
+		"pages/point_gift_address_add/point_gift_address_add",
+		"pages/point_gift_address/point_gift_address",
+		"pages/point_gift_order/point_gift_order",
+		"pages/point_gift_detail/point_gift_detail",
+		"pages/point_gift/point_gift",
+    "pages/point_register/point_register",
+		"pages/point_information/point_information",
+		
+		
+    "pages/a_my/a_my",
+    "pages/a_test/a_test",
+    "pages/a_my_scan_pay/a_my_scan_pay",
+    "pages/a_my_costpoint/a_my_costpoint",
+    
+    
+    "pages/a_map/a_map",
+    "pages/a_my_help/a_my_help",
+    "pages/a_my_help_1/a_my_help_1",
+    "pages/a_my_help_2/a_my_help_2",
+    "pages/a_my_card_show/a_my_card_show",
+    "pages/a_my_card/a_my_card",
+    "pages/a_my_describe/a_my_describe",
+    "pages/a_my_pay/a_my_pay",
+    
+    "pages/a_grhy_xfqk_xx/a_grhy_xfqk_xx",
+    "pages/a_grhy_hyk/a_grhy_hyk",
+    "pages/a_grhy_hyk_enlarge/a_grhy_hyk_enlarge",
+    "pages/a_grhy_open_wallet/a_grhy_open_wallet",
+    "pages/a_grhy_bind_wallet/a_grhy_bind_wallet",
+    "pages/a_jthy/a_jthy",
+    "pages/a_jthy_com/a_jthy_com",
+    "pages/a_register/a_register",
+    "pages/a_request/a_request",
+    "pages/a_map_store/a_map_store"    
+    
+  ],
+  "window": {
+    "enablePullDownRefresh": true
+  },
+  
+  "tabBar": {
+    "borderStyle":"white",
+    "color":"#666666",
+    "selectedColor":"#666666",
+    "backgroundColor":"#FFFFFF",
+    "list":[
+      {
+        "iconPath":"images/tab_one_off.png",
+        "selectedIconPath":"images/tab_one_on.png",
+        "text":"我的",
+        "pagePath":"pages/point_my/point_my"
+      },
+      {
+        "iconPath":"images/tab_find_off.png",
+        "selectedIconPath":"images/tab_find_on.png",
+        "text": "礼品",
+        "pagePath": "pages/point_gift/point_gift"
+      },
+      {
+        "iconPath": "images/tab_find_off.png",
+        "selectedIconPath": "images/tab_find_on.png",
+        "text": "注册",
+        "pagePath": "pages/point_register/point_register"
+      }
+      
+    ]},
+    "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": false
+}

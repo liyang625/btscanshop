@@ -1,0 +1,14 @@
+<!--index.wxml-->
+<view class="container">
+    <view class="notice">该功能用于向商家当面付款</view>
+
+    <view class="content">
+        <view class="txm">
+            <canvas canvas-id="barcode" />
+            <view class="barnum">{{vipcode}}</view>
+        </view>
+        <canvas canvas-id="ewm"  class="ewm"/>
+    </view>
+    <view class="notice1">如果付款失败,请尝试其他付款方式</view>
+    <view class="refuse" bindtap="bindRefuse">刷新条形码</view>
+</view>

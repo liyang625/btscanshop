@@ -1,0 +1,35 @@
+@import "../../utils/common.wxss";
+@import "../../wxParse/wxParse.wxss";
+
+.container{
+  background-color: white;
+}
+
+.goodsimg{
+	width: 100%;
+	height: 416rpx;
+}
+
+.title{
+	padding:20rpx;
+}
+
+.point{
+	padding:0rpx 20rpx 20rpx 20rpx;
+	color:red;
+}
+
+.doarea{
+	height: 80rpx;
+}
+
+.dobtn{
+	position:fixed;
+	bottom:0;
+	width:100%;
+	height:80rpx;
+	background-color:#FF5A5F;
+	color: #FFFFFF;
+	line-height: 80rpx;
+	text-align: center;
+}
