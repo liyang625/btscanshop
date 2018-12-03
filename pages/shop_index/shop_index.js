@@ -14,6 +14,18 @@ Page({
   onLoad: function (options) {
 
   },
+  /**
+   * 我的
+   */
+  goToMy: function () {
+    wx.navigateTo({ url: '/pages/shop_my/shop_my' })
+  },
+  /**
+   * 购物车
+   */
+  goToCar: function () {
+    wx.navigateTo({ url: '/pages/shop_car/shop_car' })
+  },
 
   /**
    * 生命周期函数--监听页面初次渲染完成

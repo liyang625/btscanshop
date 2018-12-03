@@ -1,0 +1,61 @@
+<!--显示主体-->
+<view class="container">
+    <!-- 顶部 -->
+    <view class="top">
+        <image class='topImg' src="../../images/tab_find_off.png"></image>
+        <input class="weui-input" type="number" name="code" placeholder="请输入商品条形码" />
+        <view class='topSearch'>查找</view>
+    </view>
+    <!-- 超市 -->
+    <view class="top">
+        <image class='topImg' src="../../images/tab_find_off.png"></image>
+        <view >许昌时代广场超市</view>
+    </view>
+    <view class="h_line"/>
+    
+    <!-- 列表 -->
+    <view class='list'>
+      <view class='listup'>
+          <view class='listtitle'>中号购物袋</view>
+          <view class='listAll'>￥0.2</view>
+      </view>
+      <view class='listup'>
+          <view class='listMoney'>￥0.2/个</view>
+          <view class='listButton'>
+            <view class='button'>+</view>
+            <view class='num'>1</view>
+            <view class='button'>-</view>
+          </view>
+      </view>
+    </view>
+
+    <!-- 购物袋 -->
+    <view class="top">
+        <image class='topImg' src="../../images/tab_find_off.png"></image>
+        <view >购物袋</view>
+    </view>
+    <view class="h_line"/>
+    <view class='bag'>
+        <view class='bagBg'>
+          <view class='bagDec'>
+            <view class='bagtop'>中号购物袋</view>
+            <view class='bagbottom'>￥0.2</view>
+          </view>
+          <view class='bagDec'>
+            <view class='bagtop'>大号购物袋</view>
+            <view class=' bagbottom'>￥0.2</view>
+          </view>
+        </view>
+    </view>
+    <view class='dec'>*最多购买10件商品</view>
+    <view class='bottom'>
+      <view class='continue'></view>
+      <view class='function'>
+      <view class='money'>
+        <view class='black'>合计：</view>
+        <view class='red'>￥0.2</view>
+      </view>
+      <view bindtap='goToOrder' class='settlement'>结算</view>
+      </view>
+    </view>
+</view>

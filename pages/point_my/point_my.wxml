@@ -1,7 +1,2 @@
-<button wx:if="{{showAuthorizationBtnFlag==false}}" open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">获取用户信息</button>
-<view wx:if="{{showAuthorizationBtnFlag==true}}" class="container" style="display:{{showMain}}">
-		<button open-type='share' class="share">点我分享给群可获得一次免积分兑换哦</button>
-		<image src="{{headerUrl}}" class="header"></image>
-		<view class="name">昵称：{{userName}}</view>
-		<view class="name point">积分：{{points}}</view>
-</view>
+<!--pages/point_my/point_my.wxml-->
+<text>pages/point_my/point_my.wxml</text>

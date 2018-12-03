@@ -19,7 +19,7 @@ icon {
 }
 .weui-cells:before {
   content: " ";
-  position: absolute;
+  position: c;
   left: 0;
   top: 0;
   right: 0;

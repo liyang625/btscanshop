@@ -1,6 +1,10 @@
 {
   "pages": [
-		
+    "pages/shop_index/shop_index",
+    "pages/shop_order/shop_order",
+		"pages/shop_car/shop_car",
+    "pages/shop_my/shop_my",
+    
 		"pages/point_my/point_my",
 		"pages/point_gift_order_pay/point_gift_order_pay",
 		"pages/point_gift_address_add/point_gift_address_add",
@@ -41,39 +45,6 @@
   ],
   "window": {
     "enablePullDownRefresh": true
-  },
-  
-  "tabBar": {
-    "borderStyle":"white",
-    "color":"#666666",
-    "selectedColor":"#666666",
-    "backgroundColor":"#FFFFFF",
-    "list":[
-      {
-        "iconPath":"images/tab_one_off.png",
-        "selectedIconPath":"images/tab_one_on.png",
-        "text":"我的",
-        "pagePath":"pages/point_my/point_my"
-      },
-      {
-        "iconPath":"images/tab_find_off.png",
-        "selectedIconPath":"images/tab_find_on.png",
-        "text": "礼品",
-        "pagePath": "pages/point_gift/point_gift"
-      },
-      {
-        "iconPath": "images/tab_find_off.png",
-        "selectedIconPath": "images/tab_find_on.png",
-        "text": "注册",
-        "pagePath": "pages/point_register/point_register"
-      }
-      
-    ]},
-    "networkTimeout": {
-    "request": 10000,
-    "connectSocket": 10000,
-    "uploadFile": 10000,
-    "downloadFile": 10000
   },
   "debug": false
 }

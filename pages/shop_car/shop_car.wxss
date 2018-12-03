@@ -1,0 +1,160 @@
+@import "../../utils/common.wxss";
+
+page{
+  height: 100%;
+}
+
+.container{
+  height: 100%;
+}
+
+.top{
+  height: 100rpx;
+  width: 750rpx;
+  align-items: center;
+  display: flex;
+  background:white;
+  margin-top: 20rpx;
+
+}
+.topImg{
+  width:40rpx;
+  height:40rpx;
+  margin:0 20rpx;
+
+}
+.topSearch{
+  float:right;
+  border:1px solid #f0f0f0;
+  padding:10rpx 20rpx;
+  border-radius:11rpx;
+  font-size:27rpx;
+  margin-left:214rpx;
+}
+.h_line{
+  background-color: #f0f0f0;
+  width:100%;
+  height:1px;
+}
+.list{
+  background: white;
+  border-bottom: 1px solid #f0f0f0;
+}
+.listtitle{
+  float: left;
+  font-weight:600;
+}
+.listAll{
+  float: right;
+  color: red;
+  font-size: 28rpx;
+}
+.listMoney{
+  float: left;
+  color: gray;
+  font-size: 28rpx;
+}
+.listup{
+  height:60rpx;
+  text-align:center;
+  justify-content:space-between;
+  align-items:center;
+  display:flex;
+  padding:15rpx 40rpx;
+
+}
+.listButton{
+  display: flex;
+  border:1px solid #f0f0f0;
+  height:55rpx;
+  align-items:center;
+
+}
+.listButton .button{
+  width: 55rpx;
+  
+}
+.listButton .num{
+  width: 100rpx;
+  border-left: 1px solid #f0f0f0;
+  border-right: 1px solid #f0f0f0;
+}
+.bag{
+  height: 180rpx;
+  width: 100%;
+  background: white;
+}
+.bagBg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bagDec{
+  border:1px solid #f0f0f0;
+  text-align:center;
+  width:330rpx;
+  margin:37rpx 10rpx;
+  border-radius:10rpx;
+  padding:10rpx 0rpx;
+}
+.bagtop{
+  color: gray;
+  font-size:30rpx;
+
+}
+.bagbottom {
+  color:black;
+  font-size:30rpx;
+  padding-top:8rpx;
+
+}
+.dec{
+  color:gray;
+  font-size:28rpx;
+  padding-top:20rpx;
+  padding-left: 30rpx;
+}
+.bottom{
+  position: absolute;
+  bottom: 0;
+  height: 100rpx;
+  background: white;
+  display: flex;
+  width: 100%;
+}
+.bottom .function{
+  display: flex;
+  position: absolute;
+  right: 0;
+}
+.bottom .continue{
+  background:  #F28C2A;
+  border-radius: 65rpx;
+  top: -65rpx;
+  width: 130rpx;
+  height: 130rpx;
+  position: absolute;
+  left: 40rpx;
+}
+.bottom .function .settlement{
+  background:  #F28C2A;
+  height: 100rpx;
+  text-align: center;
+  line-height: 100rpx;
+  color: white;
+  padding: 0 50rpx;
+}
+.bottom .function .money{
+  display: flex;
+  height: 100rpx;
+  text-align: center;
+  line-height: 100rpx;
+  padding-right: 30rpx;
+}
+.bottom .function .money .black{
+  color: black;
+  padding-right: 10rpx;
+}
+.bottom  .function .money .red{
+  color: red;
+}

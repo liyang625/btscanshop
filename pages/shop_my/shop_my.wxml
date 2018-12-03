@@ -1,0 +1,47 @@
+<!--显示主体-->
+<view class="container">
+    <!-- 顶部 -->
+    <view class="top">
+      <view>
+        <image src="../../images/590882daaac43.png" class="head"></image>
+          <view class="name">橘子</view>
+      </view>
+    </view>
+
+    <!-- 九宫格 -->
+    <view>
+        <view class="h_line"/>
+        <view class="content">
+            <view class="lattice" bindtap="bindScan">
+                <image src="../../images/my_sys.png"></image>
+                <view>全都订单</view>
+            </view>
+            <view class="line"/>
+            <view class="lattice" bindtap="bindPay">
+                <image src="../../images/my_fq.png"></image>
+                <view>待检验</view>
+            </view>
+        </view>
+    </view>
+   <view class='bottom'>
+      <view class='bottomline'>
+          <label>会员卡信息</label>
+          <image src="../../images/membercenter_info_r.png" class="rjt"></image>
+      </view>
+
+      <view class='bottomline'>
+          <label>切换门店</label>
+          <image src="../../images/membercenter_info_r.png" class="rjt"></image>
+      </view>
+
+      <view class='bottomline'>
+          <label>帮助中心</label>
+          <image src="../../images/membercenter_info_r.png" class="rjt"></image>
+      </view>
+
+      <view class='bottomline'>
+          <label>连续扫描商品</label>
+          <switch class='switch' bindchange="switch2Change"/>
+      </view>
+    </view>
+</view>

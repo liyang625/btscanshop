@@ -1,0 +1,32 @@
+<!--显示主体-->
+<view class="container">
+    <!-- 顶部 -->
+    <view class="top">
+        <image class='topImg' src="../../images/tab_find_off.png"></image>
+        <view class='tips'>未绑定会员卡，该订单不参与积分，</view>
+        <view class='bind'>点此绑定</view>
+    </view>
+    <!-- 超市 -->
+    <view class="middle">
+      <view class='leftview'>
+        <image class='topImg' src="../../images/tab_find_off.png"></image>
+        <view >许昌时代广场超市</view>
+      </view> 
+      <view class='rightview'>共1件</view>
+    </view>
+    <view class="h_line"/>
+    
+    <!-- 列表 -->
+    <view class='list'>
+      <view class='listup'>
+          <view class='listtitle'>中号购物袋</view>
+          <view class='listAll'>￥0.2</view>
+      </view>
+      <view class='listup'>
+          <view class='listMoney'>￥0.2/个</view>
+          <view class='listMoney'>x1</view>
+      </view>
+    </view>
+
+    <view class='button'>立即支付0.20元</view>
+</view>

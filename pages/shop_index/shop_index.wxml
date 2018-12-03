@@ -1,0 +1,32 @@
+<image class='bigimage' src="../../images/bg.jpg"></image>
+<view class='top'>
+  <view class='topBg'>
+  <view class='topcenter'>
+    <image class='topmp' src="../../images/shopMap2.png"></image>
+    <view class='topTitle'>许昌时代广场超市</view>
+    <image class='topmp' src="../../images/right.png"></image>
+  </view>
+</view>
+</view>
+<view class='bottombg'>
+  <view class='scan'>
+    <image class='scanImg' src="../../images/scan.png"></image>
+  </view>
+  <view class='bottomBtn'>
+    <view class='buttonbgLeft' bindtap='goToCar'>
+      <view class='buttonImgBg'>
+        <image class='buttonImg' src="../../images/shopcar.png" mode='aspectFit'></image>
+      </view>
+      <view class='buttonTitle'>购物车</view>
+    </view>
+    <view class='buttonbgRight' bindtap='goToMy'>
+      <view class='buttonImgBg'>
+        <image class='buttonImg' src="../../images/me.png" mode='aspectFit'></image>
+      </view>
+      <view class='buttonTitle'>我的</view>
+    </view>
+  </view>
+</view>
+
+
+

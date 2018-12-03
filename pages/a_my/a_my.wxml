@@ -1,5 +1,5 @@
 <!--显示主体-->
-<view class="container" style="display:{{showMain}}">
+<view class="container">
 
 
 

@@ -9,8 +9,8 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.4.0",
-	"appid": "wx767fbcba5588287f",
-	"projectname": "pointwxapp",
+	"appid": "wx70ea0ebb1fbaa999",
+	"projectname": "scanshop",
 	"condition": {
 		"search": {
 			"current": -1,

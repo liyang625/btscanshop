@@ -62,5 +62,11 @@ Page({
    */
   onShareAppMessage: function () {
 
-  }
+  },
+   /**
+   * 确认订单
+   */
+  goToOrder: function () {
+    wx.navigateTo({ url: '/pages/shop_order/shop_order' })
+  },
 })
